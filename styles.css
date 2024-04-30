@@ -1,0 +1,364 @@
+/* CSS for styling the Home page */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Use Google Font Roboto for a modern look */
+    margin: 0;
+    padding: 0;
+    background-color: #fff5e6;
+    /* Beige */
+}
+
+header {
+    background-color: #ff7f50;
+    /* Orange */
+    color: #fff;
+    /* White accent */
+    padding: 10px;
+    /* Reduced padding */
+    text-align: left;
+    position: relative;
+}
+
+.logo {
+    margin-right: auto;
+    /* Push logo to the left */
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center align items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Use flexbox for layout */
+}
+
+nav ul li {
+    margin-left: 20px;
+    /* Add space between items */
+}
+
+nav ul li:first-child {
+    margin-left: auto;
+    /* Push first item (HOME) to the left */
+}
+
+nav ul li a {
+    color: #fff;
+    /* White accent */
+    text-decoration: none;
+    padding: 10px 15px;
+    /* Reduced padding */
+    border-radius: 10px;
+    font-weight: bold;
+    /* Make the font bold */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+}
+
+nav ul li a:hover {
+    background-color: #ff9966;
+    /* Lighter shade on hover */
+}
+
+nav ul li a.login-btn {
+    background-color: #fff;
+    /* White */
+    color: #ff7f50;
+    /* Orange */
+    border: 2px solid #ff7f50;
+    /* Orange */
+    border-radius: 20px;
+}
+
+nav ul li a.login-btn:hover {
+    background-color: #ffd699;
+    /* Lighter shade of orange on hover */
+    transition: background-color 0.3s;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    /* Increased padding for the form */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+    /* Increased margin between sections */
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 32px;
+    /* Increased font size for headings */
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 32px;
+    /* Increased font size for headings */
+    text-align: center;
+    /* Center align headings */
+}
+
+.member-details {
+    display: inline-block;
+}
+
+.member-image {
+    float: right;
+}
+
+.img-logo {
+    height: 200px;
+    width: 300px;
+}
+
+form {
+    max-width: 400px;
+    /* Limit form width */
+    margin: 0 auto;
+    /* Center align form */
+}
+
+.drop-down {
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    /* Add space between input groups */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center align items vertically */
+}
+
+.input-group label {
+    width: 150px;
+    /* Fixed width for labels */
+    margin-right: 20px;
+    /* Add space between label and input */
+}
+
+.input-group input[type="text"],
+.input-group select,
+.input-group input[type="password"] {
+    flex: 1;
+    /* Allow input to take remaining space */
+    padding: 10px;
+    /* Reduced padding for input fields */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    /* Reduced font size for input fields */
+}
+
+button.login-btn,
+.vote-btn {
+    background-color: #ff7f50;
+    /* Orange */
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    /* Increased padding for button */
+    border-radius: 5px;
+    font-size: 16px;
+    /* Increased font size for button */
+    width: 100%;
+    /* Full width button */
+}
+
+button.login-btn:hover,
+.vote-btn:hover {
+    background-color: #ff9966;
+    /* Lighter shade of orange on hover */
+}
+
+footer {
+    background-color: #ff7f50;
+    /* Orange */
+    color: #fff;
+    /* White accent */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 98.5%;
+    bottom: 0;
+}
+
+.register-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    /* Add space between login form and register link */
+}
+
+.user-info {
+    width: 20%;
+    margin: 20px;
+    padding: 40px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+/* Additional CSS for candidate list */
+.candidate {
+    border: 1px solid #0000;
+    /* Black border */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.candidate-main {
+    width: 50%;
+    margin: 20px auto;
+    padding: 40px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-list {
+    float: Center;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.candidate-details {
+    display: flex;
+    align-items: center;
+}
+
+.candidate-image {
+    margin-left: 20px;
+    /* Adjusted margin */
+    float: right;
+    height: 150px;
+    width: 200px;
+    /* Float the image to the right */
+}
+
+.candidate-image img {
+    height: 150px;
+    width: 150px;
+}
+
+.candidate-image img {
+    height: 100px;
+    width: 100px;
+    /* Adjust image size as needed */
+    border-radius: 5px;
+}
+
+.candidate-details {
+    display: flex;
+    align-items: center;
+}
+
+.candidate-image {
+    margin-left: 20px;
+    /* Adjusted margin */
+    float: right;
+    /* Float the image to the right */
+}
+
+.candidate-info {
+    flex: 1;
+    /* Allow candidate info to take remaining space */
+}
+
+.vote-btn {
+    background-color: #ff7f50;
+    /* Orange */
+    color: #fff;
+    /* White */
+    border: 2px solid #ff7f50;
+    /* Orange */
+    border-radius: 20px;
+    font-size: 16px;
+    width: auto;
+    /* Auto width for button */
+}
+
+.vote-btn:hover {
+    transition: background-color 0.3s;
+    background-color: #ffd699;
+    /* Green */
+    border-color: #ff7f50;
+    /* Green */
+}
+
+#button {
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    width: 76.03px;
+    height: 42.67px;
+    background-color: #5cb85c;
+    /* Green */
+    border-color: #5cb85c;
+    /* Green */
+}
+
+.container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Align items with space between them */
+    background-color: #fff5e6;
+    /* Same background color as the main section */
+    margin: 20px;
+    /* Add margin around the container */
+    padding: 20px;
+    /* Add padding inside the container */
+    border-radius: 5px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow for a raised effect */
+}
+
+.user-info,
+.candidate-list {
+
+    /* Allow sections to take equal space */
+    padding: 20px;
+    /* Add padding inside each section */
+}
+
+#icon i {
+    height: 30px;
+    width: 30px;
+}
